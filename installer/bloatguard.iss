@@ -28,8 +28,10 @@ Name: "en"; MessagesFile: "compiler:Default.isl"
 Name: "autostart"; Description: "Start with Windows (run Agent on logon)"; GroupDescription: "Optional tasks:"; Flags: unchecked
 
 [Files]
-Source: "..\dist\BloatGuard\BloatGuard.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\dist\BloatGuardAgent\BloatGuardAgent.exe"; DestDir: "{app}"; Flags: ignoreversion
+; Copy EVERYTHING from the app folder
+Source: "..\dist\BloatGuard\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+; Copy EVERYTHING from the agent folder
+Source: "..\dist\BloatGuardAgent\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Dirs]
 Name: "{commonappdata}\BloatGuard"; Permissions: users-modify

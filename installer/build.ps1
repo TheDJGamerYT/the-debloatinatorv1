@@ -17,4 +17,4 @@ if (-not (Test-Path "..\dist\BloatGuardAgent\BloatGuardAgent.exe")) {
 # Build the installer
 & "$ISCC" "bloatguard.iss"
 
-Write-Host "✓ Build complete. Check installer\Output\BloatGuard-Setup.exe"
+Write-Host "Build complete. Check installer\Output\BloatGuard-Setup.exe"
