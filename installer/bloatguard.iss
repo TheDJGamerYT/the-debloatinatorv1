@@ -1,5 +1,5 @@
 #define AppName "BloatGuard"
-#define AppVersion "1.0.0"
+#define AppVersion "1.0.1"
 #define Publisher "DJ Studios"
 #define AppExe "BloatGuard.exe"
 #define AgentExe "BloatGuardAgent.exe"
